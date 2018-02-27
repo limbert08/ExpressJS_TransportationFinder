@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TransportationFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h3><strong>Your Information</strong></h3>
+    <h4>Your Current Form of Transportation (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to your Current Form of Transportation Photo (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>What is your budget?</h4>
+    <select class="chosen-select" id="q1">
+      <option value=""></option>
+      <option value="1">1 (< $20,000)</option>
+      <option value="2">2 ($20,000 to $29,999)</option>
+      <option value="3">3 ($30,000 to $49,999)</option>
+      <option value="4">4 ($50,000 to $99,999)</option>
+      <option value="5">5 (> $100,000)</option>
+    </select>
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>What is your preferred Make?</h4>
+    <select class="chosen-select" id="q2">
+      <option value=""></option>
+      <option value="1">1 (Japanese)</option>
+      <option value="2">2 (European)</option>
+      <option value="3">3 (American)</option>
+      <option value="4">4 (Korean)</option>
+      <option value="5">5 (Other)</option>
+    </select>
+
+
+    <h3><strong>Question 3</strong></h3>
+    <h4>What is you preferred Style?</h4>
+    <select class="chosen-select" id="q3">
+      <option value=""></option>
+      <option value="1">1 (Sedan)</option>
+      <option value="2">2 (Van)</option>
+      <option value="3">3 (Truck)</option>
+      <option value="4">4 (SUV)</option>
+      <option value="5">5 (Other)</option>
+    </select>
+
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>What type of Fuel would you want your vehicle to use?</h4>
+    <select class="chosen-select" id="q4">
+      <option value=""></option>
+      <option value="1">1 (Regular Unleaded)</option>
+      <option value="2">2 (Diesel)</option>
+      <option value="3">3 (Electric)</option>
+      <option value="4">4 (Hybrid)</option>
+      <option value="5">5 (Other)</option>
+    </select>
+
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>What is your targeted Fuel Economy (MPG)?</h4>
+    <select class="chosen-select" id="q5">
+      <option value=""></option>
+      <option value="1">1 (50+ MPG)</option>
+      <option value="2">2 (40+ MPG)</option>
+      <option value="3">3 (30+ MPG)</option>
+      <option value="4">4 (20+ MPG)</option>
+      <option value="5">5 (Other)</option>
+    </select>
+
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>How many people would you like to seat?</h4>
+    <select class="chosen-select" id="q6">
+      <option value=""></option>
+      <option value="1">1 (1-2 people)</option>
+      <option value="2">2 (3-4 people)</option>
+      <option value="3">3 (5-6 people)</option>
+      <option value="4">4 (7-8 people)</option>
+      <option value="5">5 (9+ people)</option>
+    </select>
+
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>What kind of Drivetrain would you prefer?</h4>
+    <select class="chosen-select" id="q7">
+      <option value=""></option>
+      <option value="1">1 (FWD Front-Wheel Drive)</option>
+      <option value="2">2 (RWD Rear-Wheel Drive)</option>
+      <option value="3">3 (AWD All-Wheel Drive)</option>
+      <option value="4">4 (4WD Four-Wheel Drive)</option>
+      <option value="5">5 (Other)</option>
+    </select>
+
+    <h3><strong>Question 8</strong></h3>
+    <h4>How would you use the vehicle?</h4>
+    <select class="chosen-select" id="q8">
+      <option value=""></option>
+      <option value="1">1 (Work Commute)</option>
+      <option value="2">2 (Leisure)</option>
+      <option value="3">3 (Carpool)</option>
+      <option value="4">4 (Accesibility)</option>
+      <option value="5">5 (Haul/Freight)</option>
+    </select>
+
+    <h3><strong>Question 9</strong></h3>
+    <h4>What is your Budget for Insurance/Maintenance costs per month?</h4>
+    <select class="chosen-select" id="q9">
+      <option value=""></option>
+      <option value="1">1 (< $100)</option>
+      <option value="2">2 ($100-$199)</option>
+      <option value="3">3 ($200-$299)</option>
+      <option value="4">4 ($300-$500)</option>
+      <option value="5">5 (> $500)</option>
+    </select>
+
+    <h3><strong>Question 10</strong></h3>
+    <h4>What top Speed would you like your vehicle to attain?</h4>
+    <select class="chosen-select" id="q10">
+      <option value=""></option>
+      <option value="1">1 (< 60mph)</option>
+      <option value="2">2 (60mph-100mph)</option>
+      <option value="3">3 (100mph-150mph)</option>
+      <option value="4">4 (> 150mph)</option>
+      <option value="5">5 (Other)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-toggle-right" aria-hidden="true"></i>
+     Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/autos">API Friends List</a> | <a href="https://github.com/limbert08">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg"> 
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Ideal Transportation Option Found:</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://internetdevels.com/sites/default/files/public/styles/937s/public/blog_preview/404_page_cover.jpg" alt="Sorry, transportation match not found">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    
+    var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "NOT FOUND"
+      },
+      ".chosen-select-width": {
+        width: "100%"
+      }
+    };
+
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+
+    
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+    
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      if (validateForm()) {
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+    
+        $.post("/api/autos", userData, function(data) {
+
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Please answer all Survey questions before submitting");
+      }
+    });
+  </script>
+
+</body>
+
+	
+</html>
